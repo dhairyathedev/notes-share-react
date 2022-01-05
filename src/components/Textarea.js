@@ -50,6 +50,10 @@ function Textarea() {
         const obj = {
             fontSize : 25,
             fontFamily : 'monospace',
+            saveFile: () => {
+                const btn = document.querySelector('#saveBtn')
+                btn.click()
+            }
         }
         gui.add(obj, 'fontSize').min(8).max(60).step(1).onChange(e => {
             document.querySelector('textarea').style.fontSize = `${e}px`
@@ -63,12 +67,14 @@ function Textarea() {
         }).onChange(e => {
             document.querySelector('textarea').style.fontFamily = e
         })
+        gui.add(obj, 'saveFile')
     }
     setTimeout(settings, 1500)
     }, [])
     return (
         <div onKeyDown={Shortcut}>
             <textarea id="txt" cols="30" rows="10" placeholder="Enter some text!" value={text} onChange={e => setText(e.target.value)} onKeyDown={keySound}></textarea>
+            <button onClick={handleSave} id='saveBtn'>Save</button>
         </div>
     )
 }
