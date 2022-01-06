@@ -2,12 +2,12 @@ import firebase from "firebase/compat/app"
 import "firebase/compat/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAEbnB6dJHPCChet_zb1JJ8aomfG8HIwUY",
-    authDomain: "notice-583f1.firebaseapp.com",
-    projectId: "notice-583f1",
-    storageBucket: "notice-583f1.appspot.com",
-    messagingSenderId: "236700266640",
-    appId: "1:236700266640:web:82d416d09f6f8a95922815"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_ID",
+    appId: "YOUR_APP_ID"
   };
 
 
